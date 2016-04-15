@@ -1,0 +1,10 @@
+TO  DO
+
+1.	No check notification
+2.	Moves doesnt include check
+3.	Pieces Images
+4.	Checkmate
+5.	No killing the king
+6.	Promotion to queen, Knight, Bishop or Rook
+7.	Resize the board
+8.	No crossing over pieces

@@ -1,0 +1,189 @@
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.holder {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.set {
+	width: 430px;
+	height: 425px;
+	border: 20px solid transparent;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	transform-origin: 54% 54%;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+.moves {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+	color: #EEE;
+	font-size: 18px;
+	padding: 10px;
+	background: #063;
+	margin: 0;
+}
+
+.rotate {
+	position: absolute;
+	top: 80px;
+	right: 50px;
+	color: #EEE;
+	font-size: 18px;
+	padding: 10px;
+	background: #069;
+	margin: 0;
+	cursor: pointer;
+}
+
+.move_list {
+	position: absolute;
+	top: 150px;
+	right: 50px;
+	width: 200px;
+	padding: 10px;
+	background: #DDD;
+	border: 1px solid #AAA;
+	box-shadow: 0px 0px 4px 1px #AAA;
+}
+
+.move_list:before {
+	content: "Moves";
+	position: absolute;
+	top: -20px;
+}
+
+
+.move_list > span {
+	display: inline-block;
+	width: 98px;
+	text-align: center;
+	border: 1px solid #999;
+	margin-bottom: 5px;
+}
+
+.move.W {
+	background: #AAA;
+	color: #444;
+}
+
+.move.B {
+	background: #444;
+	color: #AAA;
+}
+
+.board {
+	width: 430px;
+	height: 425px;
+
+	border: 20px solid #333;
+	display: block;
+	background-color: #333;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+.pieces, .highlights {
+	width: 430px;
+	height: 425px;
+	border: 20px solid transparent;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	-webkit-transition: all 1s ease-in-out;
+}
+
+.pieces {
+	z-index: 2;
+}
+
+.highlight {
+	width: 50px;
+	height: 50px;
+
+	display: inline-block;
+	background: rgba(230, 55, 55, .7);
+	margin: 0;
+	position: absolute;
+	z-index: 10;
+	cursor: pointer;
+}
+
+span {
+	padding: 0;
+	margin: 0;
+}
+
+.black {
+	width: 50px;
+	height: 50px;
+
+	display: inline-block;
+	background: #444;
+	margin: 0;
+}
+
+.white {
+	width: 50px;
+	height: 50px;
+
+	display: inline-block;
+	background: #DDD;
+	margin: 0;
+}
+
+.piece {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	box-sizing: border-box;
+	-webkit-transition: all 1s ease-in-out;
+	cursor: pointer;
+	background: url('../include/pieces.png') no-repeat;
+	background-size: 200px;
+
+}
+
+.W {
+	border: 5px solid #666;
+}
+
+.B {
+	border: 5px solid #999;
+}
+
+.Knight.B {
+	background-position: -100px -60px;
+}
+
+.Knight.W {
+	background-position: -68px -10px;
+}
+
+.Queen.B {
+	background-position: -35px -60px;
+}
+
+.Queen.W {
+	background-position: -135px -5px;
+}
+
+.Rook.B {
+	background-position: -100px -60px;
+}
+
+.Rook.W {
+	background-position: -68px -10px;
+}
